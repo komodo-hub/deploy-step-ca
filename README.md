@@ -6,6 +6,8 @@ Deploys Smallstep's `step-ca`, a private online certificate authority.
 
 https://hub.docker.com/r/smallstep/step-ca
 
+*Note.* After deploying, check the `fingerprint` service's log to get the certificate fingerprint.
+
 ## Komodo Resource TOML
 
 ```toml
@@ -27,8 +29,5 @@ environment = """
   STEPCA_TAG = latest
   RESTART = unless-stopped
   LOGGING_DRIVER = local
-  
-  ## Use a custom path for the data mount
-  # STEPCA_DATA_PATH = /path/to/data
 """
 ```

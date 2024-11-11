@@ -16,6 +16,8 @@ services:
     command: step certificate fingerprint certs/root_ca.crt
     volumes:
       - data:/home/step
+    depends_on:
+      - server
 
 volumes:
   data:
