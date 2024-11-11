@@ -1,0 +1,15 @@
+services:
+
+  server:
+    image: smallstep/step-ca:${STEPCA_TAG:-latest}
+    restart: ${RESTART:-unless-stopped}
+    logging:
+      driver: ${LOGGING_DRIVER:-local}
+    ports:
+      - ${STEPCA_PORT:-9000}:9000
+    volumes:
+      - ${STEPCA_DATA_PATH:-data}:/home/step
+    env_file: .env
+
+volumes:
+  data:
