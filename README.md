@@ -14,6 +14,7 @@ name = "step-ca"
 [stack.config]
 repo = "komodo-hub/deploy-step-ca"
 file_paths = ["compose.yaml"]
+ignore_services = ["fingerprint"]
 environment = """
   ## Pass environment directory to container
   ## See https://hub.docker.com/r/smallstep/step-ca
