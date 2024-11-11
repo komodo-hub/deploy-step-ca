@@ -2,7 +2,7 @@
 
 Part of the [_Komodo Hub_ collection.](https://github.com/komodo-hub/komodo-hub)
 
-Deploys Smallsteps `step-ca`, a private online certificate authority.
+Deploys Smallstep's `step-ca`, a private online certificate authority.
 
 https://hub.docker.com/r/smallstep/step-ca
 
