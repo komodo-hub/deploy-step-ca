@@ -24,6 +24,9 @@ environment = """
   DOCKER_STEPCA_INIT_DNS_NAMES = localhost,local
   DOCKER_STEPCA_INIT_REMOTE_MANAGEMENT = true
 
+  ## Use a local directory instead of a volume
+  # DATA_DIR = ./data
+
   ## Compose variables.
   STEPCA_PORT = 9000
   STEPCA_TAG = latest
