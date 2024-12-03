@@ -11,13 +11,5 @@ services:
       - ${DATA_DIR:-data}:/home/step
     env_file: .env
 
-  fingerprint:
-    image: smallstep/step-ca:${STEPCA_TAG:-latest}
-    command: step certificate fingerprint certs/root_ca.crt
-    volumes:
-      - ${DATA_DIR:-data}:/home/step
-    depends_on:
-      - server
-
 volumes:
   data:

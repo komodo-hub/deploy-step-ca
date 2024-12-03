@@ -6,7 +6,8 @@ Deploys Smallstep's `step-ca`, a private online certificate authority.
 
 https://hub.docker.com/r/smallstep/step-ca
 
-*Note.* After deploying, check the `fingerprint` service's log to get the certificate fingerprint. You may have to restart the container if it fails.
+*Note.* After deploying, check the log to get the certificate fingerprint and auto generated admin password.
+You will need them later.
 
 ## Komodo Resource TOML
 
